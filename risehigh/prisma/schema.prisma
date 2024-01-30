@@ -1,0 +1,86 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Booking {
+  id          String       @id @default(auto()) @map("_id") @db.ObjectId
+  email       String?      @unique
+  firstName   String
+  lastName    String
+  phoneNumber String
+  roomType    RoomType
+  checkIn     DateTime
+  checkOut    DateTime
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  roomNo      Int
+  status      String
+  paymentStatus String
+  paymentRef  String
+  tranxId     String?
+  meta        Json?
+
+
+   @@map("booking")
+}
+
+
+
+
+model Prices {
+  id          String       @id @default(auto()) @map("_id") @db.ObjectId
+  roomType   RoomType
+  price     Int
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  meta        Json?
+
+
+   @@map("prices")
+}
+
+model User {
+  id          String       @id @default(auto()) @map("_id") @db.ObjectId
+  email       String?      @unique
+  firstName   String
+  lastName    String
+  role        Role
+  staus       Status
+  phoneNumber String
+  password    String
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  meta        Json?
+
+
+   @@map("users")
+}
+
+
+enum RoomType{
+    DELUXE
+    QUEEN_BED_SUITE
+    LUXURY
+    KING_BED_SUITE
+}
+
+enum Status{
+    ACTIVE
+    INACTIVE
+    DELETED
+}
+
+enum Role {
+  ADMIN 
+  MANAGER 
+  SUPERVISOR 
+  RECEPTIONIST 
+}

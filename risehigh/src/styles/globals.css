@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Sarabun', sans-serif;
+}
+
+@layer utilities {
+.toast-message {
+  @apply bg-blue-800 text-white text-2xl w-[34vw] py-7 px-5;
+}
+}

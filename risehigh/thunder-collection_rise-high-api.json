@@ -1,0 +1,351 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "rise-high-api",
+    "dateExported": "2023-12-18T12:03:22.985Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "075c569a-3938-4e47-a1a0-c778ac5c18b1",
+            "name": "booking",
+            "containerId": "",
+            "created": "2023-12-17T21:50:40.574Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "b8b37a35-1953-43c8-b553-c11d9147ae6a",
+            "name": "users",
+            "containerId": "",
+            "created": "2023-12-17T22:01:43.058Z",
+            "sortNum": 20000,
+            "settings": {
+                "auth": {
+                    "type": "bearer",
+                    "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2Y3NjExZDU3NzYyNThkMDllZjhjYSIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzAyODU1MjMyLCJleHAiOjE3MDI4NTY0MzJ9.DLcb1spB1NnxpEida1xhfzkc3mbikmnANev24UMq414"
+                }
+            }
+        }
+    ],
+    "requests": [
+        {
+            "_id": "ae1aa908-1d52-423b-9c93-d9ffe0c41122",
+            "colId": "09ea2be3-b5e9-4e6d-893f-c9ac8ca9a697",
+            "containerId": "075c569a-3938-4e47-a1a0-c778ac5c18b1",
+            "name": "create-booking",
+            "url": "{{url}}/booking",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-12-17T21:50:58.281Z",
+            "modified": "2023-12-17T23:22:38.320Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"email\": \"dowwwe@example.com\",\n  \"phoneNumber\": \"123-456-7890\",\n  \"checkIn\": \"2023-03-01\",\n  \"checkOut\": \"2023-03-05\",\n  \"roomType\": \"deluxe\",\n  \"numberOfPerson\": 3,\n  \"amountPaid\": 500,\n  \"paymentStatus\": \"Paid\",\n  \"paymentRef\": \"xyz123\", \n  \"tranxId\": \"abc456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7170e387-21ce-426c-853b-031fe44751d1",
+            "colId": "09ea2be3-b5e9-4e6d-893f-c9ac8ca9a697",
+            "containerId": "075c569a-3938-4e47-a1a0-c778ac5c18b1",
+            "name": "create-booking Copy",
+            "url": "{{url}}/booking",
+            "method": "POST",
+            "sortNum": 11250,
+            "created": "2023-12-18T01:20:09.065Z",
+            "modified": "2023-12-18T01:20:09.065Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"email\": \"dowwwe@example.com\",\n  \"phoneNumber\": \"123-456-7890\",\n  \"checkIn\": \"2023-03-01\",\n  \"checkOut\": \"2023-03-05\",\n  \"roomType\": \"deluxe\",\n  \"numberOfPerson\": 3,\n  \"amountPaid\": 500,\n  \"paymentStatus\": \"Paid\",\n  \"paymentRef\": \"xyz123\", \n  \"tranxId\": \"abc456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2888afb1-98c0-4bf1-b253-5e1a33147ed8",
+            "colId": "09ea2be3-b5e9-4e6d-893f-c9ac8ca9a697",
+            "containerId": "075c569a-3938-4e47-a1a0-c778ac5c18b1",
+            "name": "Get Room Prices",
+            "url": "{{url}}/booking/room-prices",
+            "method": "GET",
+            "sortNum": 12500,
+            "created": "2023-12-17T23:32:21.953Z",
+            "modified": "2023-12-17T23:54:55.556Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b95ece9f-d608-4c0f-b891-4756e36b1636",
+            "colId": "09ea2be3-b5e9-4e6d-893f-c9ac8ca9a697",
+            "containerId": "075c569a-3938-4e47-a1a0-c778ac5c18b1",
+            "name": "update booking",
+            "url": "{{url}}/booking/657f82bef3c1599a53560002",
+            "method": "PATCH",
+            "sortNum": 15000,
+            "created": "2023-12-17T23:28:40.108Z",
+            "modified": "2023-12-17T23:30:29.348Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"email\": \"dowwwe@example.com\",\n  \"phoneNumber\": \"123-456-7890\",\n  \"checkIn\": \"2023-03-01\",\n  \"checkOut\": \"2023-03-05\",\n  \"roomType\": \"deluxe\",\n  \"numberOfPerson\": 5,\n  \"amountPaid\": 600,\n  \"paymentRef\": \"xyz123\", \n  \"tranxId\": \"abc456\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2Y3NjExZDU3NzYyNThkMDllZjhjYSIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzAyODU1MjMyLCJleHAiOjE3MDI4NTY0MzJ9.DLcb1spB1NnxpEida1xhfzkc3mbikmnANev24UMq414"
+            },
+            "tests": []
+        },
+        {
+            "_id": "619bc099-5496-4517-a4e8-c1a341f830a8",
+            "colId": "09ea2be3-b5e9-4e6d-893f-c9ac8ca9a697",
+            "containerId": "075c569a-3938-4e47-a1a0-c778ac5c18b1",
+            "name": "find One booking",
+            "url": "{{url}}/booking/657f82bef3c1599a53560002",
+            "method": "DELETE",
+            "sortNum": 17500,
+            "created": "2023-12-18T00:00:05.986Z",
+            "modified": "2023-12-18T00:04:05.140Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2Y4ODBhNzAxY2RkZGMzOGM2MWY4NCIsImVtYWlsIjoicm95QGdtYWlsLmNvbSIsInJvbGUiOiJyZWNlcHRpb25pc3QiLCJpYXQiOjE3MDI4NTc4MDQsImV4cCI6MTcwMjg1OTAwNH0.bWyr8gUi-Tu8J3iNcaF2kXj8cQGP_dgq19Wu09FRbEM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "25e81617-9520-43ac-b1de-f04459820c47",
+            "colId": "09ea2be3-b5e9-4e6d-893f-c9ac8ca9a697",
+            "containerId": "075c569a-3938-4e47-a1a0-c778ac5c18b1",
+            "name": "make payment",
+            "url": "{{url}}/booking/pay",
+            "method": "POST",
+            "sortNum": 18750,
+            "created": "2023-12-18T00:02:08.268Z",
+            "modified": "2023-12-18T01:20:48.416Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"amount\": 4000\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2Y3NjExZDU3NzYyNThkMDllZjhjYSIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzAyODU3NjYwLCJleHAiOjE3MDI4NTg4NjB9.TVWSz4p6Sk72QM04uP3YiiZkVMQ0i747LBnhIj_W76k"
+            },
+            "tests": []
+        },
+        {
+            "_id": "36090fbe-92ff-4a63-a46e-69fdb2848d09",
+            "colId": "09ea2be3-b5e9-4e6d-893f-c9ac8ca9a697",
+            "containerId": "075c569a-3938-4e47-a1a0-c778ac5c18b1",
+            "name": "verify Payment",
+            "url": "{{url}}/booking/verify-payment/7b3pza52so",
+            "method": "GET",
+            "sortNum": 19375,
+            "created": "2023-12-18T01:46:45.453Z",
+            "modified": "2023-12-18T11:43:41.074Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2Y3NjExZDU3NzYyNThkMDllZjhjYSIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzAyODU3NjYwLCJleHAiOjE3MDI4NTg4NjB9.TVWSz4p6Sk72QM04uP3YiiZkVMQ0i747LBnhIj_W76k"
+            },
+            "tests": []
+        },
+        {
+            "_id": "3b74eb70-790e-4e9f-808e-c73ec0adeab5",
+            "colId": "09ea2be3-b5e9-4e6d-893f-c9ac8ca9a697",
+            "containerId": "075c569a-3938-4e47-a1a0-c778ac5c18b1",
+            "name": "fetch All Booking",
+            "url": "/booking?page=1&size=1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-12-17T21:53:15.668Z",
+            "modified": "2023-12-18T00:25:14.376Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "size",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2Y4ODBhNzAxY2RkZGMzOGM2MWY4NCIsImVtYWlsIjoicm95QGdtYWlsLmNvbSIsInJvbGUiOiJyZWNlcHRpb25pc3QiLCJpYXQiOjE3MDI4NTkwMTMsImV4cCI6MTcwMjk0NTQxM30.Em9k4exBUU6kKJx1z19jI9GwmqSIdrcnW799LSLZbLg"
+            },
+            "tests": []
+        },
+        {
+            "_id": "94d817bd-dfa3-48de-95d3-17d06109dace",
+            "colId": "09ea2be3-b5e9-4e6d-893f-c9ac8ca9a697",
+            "containerId": "b8b37a35-1953-43c8-b553-c11d9147ae6a",
+            "name": "Add User",
+            "url": "{{url}}/users",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-12-17T22:02:05.231Z",
+            "modified": "2023-12-17T23:45:14.781Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"firstName\":\"Roy\",\n    \"lastName\": \"Joy\",\n    \"email\":\"roy@gmail.com\",\n    \"password\": \"12345678\",\n    \"phoneNumber\": \"08034567891\"\n    \n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2Y3NjExZDU3NzYyNThkMDllZjhjYSIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzAyODU2NjQxLCJleHAiOjE3MDI4NTc4NDF9.uA3WOCHLC07J0_Q9XVVmffe33kw4nQQ3qq-BSfU9dr4"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f9c7a2f6-24f6-4058-8fed-41c8e506ac2b",
+            "colId": "09ea2be3-b5e9-4e6d-893f-c9ac8ca9a697",
+            "containerId": "b8b37a35-1953-43c8-b553-c11d9147ae6a",
+            "name": "Update A User",
+            "url": "{{url}}/users/657f78d7c0ae844ebe4d70f2",
+            "method": "PATCH",
+            "sortNum": 22500,
+            "created": "2023-12-17T22:40:36.508Z",
+            "modified": "2023-12-17T22:42:52.473Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"firstName\":\"Jimmy\",\n    \"lastName\": \"James\",\n    \"phoneNumber\": \"08034567823\",\n    \"role\": \"supervisor\",\n    \"status\": \"inactive\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "be733be1-74e4-4fff-afe2-3b433ff35113",
+            "colId": "09ea2be3-b5e9-4e6d-893f-c9ac8ca9a697",
+            "containerId": "b8b37a35-1953-43c8-b553-c11d9147ae6a",
+            "name": "login",
+            "url": "{{url}}/users/login",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2023-12-17T22:29:20.596Z",
+            "modified": "2023-12-18T00:03:24.165Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\":\"roy@gmail.com\",\n    \"password\": \"12345678\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "71931966-2aed-4e5b-a9f2-342434e8f7d6",
+            "colId": "09ea2be3-b5e9-4e6d-893f-c9ac8ca9a697",
+            "containerId": "b8b37a35-1953-43c8-b553-c11d9147ae6a",
+            "name": "Fetch Users",
+            "url": "{{url}}/users",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-12-17T22:17:01.079Z",
+            "modified": "2023-12-18T00:03:03.315Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2Y3NjExZDU3NzYyNThkMDllZjhjYSIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzAyODU3NzY3LCJleHAiOjE3MDI4NTg5Njd9.uWQwEoS23-Ed0Jogy0rQAlN22DmVm7-_RvqOEXmLlh8"
+            },
+            "tests": []
+        },
+        {
+            "_id": "cc2155fb-1ee4-4afc-9748-fd52797b1f08",
+            "colId": "09ea2be3-b5e9-4e6d-893f-c9ac8ca9a697",
+            "containerId": "075c569a-3938-4e47-a1a0-c778ac5c18b1",
+            "name": "Room Prices",
+            "url": "/booking/room-prices",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-12-17T23:25:24.886Z",
+            "modified": "2023-12-17T23:54:43.872Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \n  \"roomType\": \"luxury\",\n  \"price\": 5000\n\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2Y3NjExZDU3NzYyNThkMDllZjhjYSIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzAyODU2ODQ5LCJleHAiOjE3MDI4NTgwNDl9.zFLJxacaWVezg84i9v89AKqTLiczbn10No8GBHbmzqM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "4700caa0-51f7-45d6-be7e-bbfecb309f05",
+            "colId": "09ea2be3-b5e9-4e6d-893f-c9ac8ca9a697",
+            "containerId": "b8b37a35-1953-43c8-b553-c11d9147ae6a",
+            "name": "Find One User",
+            "url": "{{url}}/users/657f75bdd5776258d09ef8c8",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-12-17T22:19:44.984Z",
+            "modified": "2023-12-17T22:29:12.365Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2f6c044d-1c2c-4cc1-8cd0-7fd4e11a65c3",
+            "colId": "09ea2be3-b5e9-4e6d-893f-c9ac8ca9a697",
+            "containerId": "075c569a-3938-4e47-a1a0-c778ac5c18b1",
+            "name": "Update Room Price",
+            "url": "/booking/room-prices/luxury",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2023-12-17T23:55:44.350Z",
+            "modified": "2023-12-17T23:59:27.181Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \n  \"roomType\": \"luxury\",\n  \"price\": 6000\n\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2Y3NjExZDU3NzYyNThkMDllZjhjYSIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzAyODU2ODQ5LCJleHAiOjE3MDI4NTgwNDl9.zFLJxacaWVezg84i9v89AKqTLiczbn10No8GBHbmzqM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "ae2061c8-48cd-45fa-9b7f-635c611a105f",
+            "colId": "09ea2be3-b5e9-4e6d-893f-c9ac8ca9a697",
+            "containerId": "b8b37a35-1953-43c8-b553-c11d9147ae6a",
+            "name": "delete a user",
+            "url": "{{url}}/users/657f75bdd5776258d09ef8c8",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-12-17T22:38:44.329Z",
+            "modified": "2023-12-17T22:39:13.376Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "http://localhost:3001/api"
+        }
+    }
+}
